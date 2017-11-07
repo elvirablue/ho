@@ -1,0 +1,70 @@
+
+.main-footer {
+	position: relative;
+	padding: 0;		
+	height: @height-footer;
+	margin-top: -@height-footer;
+	@media @mobil-widths {
+		text-align: center;
+		height: @height-footer-mobil;
+		margin-top: -@height-footer-mobil;
+	}
+	hr {
+		color: #ed2c14;
+		background-color: #ed2c14;
+		height: 1px;
+		width: 100%;
+		border: none;
+		margin: 0 0 40px;
+		@media @mobil-widths {margin-bottom: 20px;}
+	}
+	.index_logo {
+		margin-left: 70px;
+		@media @mobil-widths {
+			margin: 0 auto 0;
+			img {width: 70px;}
+		}
+	}
+	.contacts {
+		padding-top: 12px;
+		a {
+			display: block;
+			color: #fff;
+			.text(18px, 400);
+		}
+		.phone, .mail {font-weight: 300;}
+	}
+	.social {
+		display: block;
+		text-align: right;
+		padding-right: 70px;
+		padding-top: 20px;
+		@media @mobil-widths {
+			width: 100%;
+			text-align: center;
+			padding: 20px 20px 0;
+		}
+		&-ico {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0 15px;
+		}
+		&-ico.tel {
+			background-image: url(../img/ico/i-telegram.svg);
+			background-size: 20px auto;
+			background-position: 8px center;
+		}
+		&-ico.fb {
+			background-image: url(../img/ico/i-fb.svg);
+			background-size: 22px auto;
+		}
+	}
+	
+}
+
+

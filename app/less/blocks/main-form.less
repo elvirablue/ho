@@ -1,0 +1,25 @@
+.main-form {
+    height: 685px;
+    text-align: center;    
+    background-color: @color-red;
+    background: url(../img/bg-3.jpg) center no-repeat  @color-red;
+    background-size: auto;
+    * {color: #fff;}
+    padding: 100px 0 @height-footer 0;
+	@media @mobil-widths {
+        height: auto;
+        padding-top: 40px;
+		padding-bottom: @height-footer-mobil;
+    }
+    h2 {
+        font-weight: 700;
+        span {
+            font-weight: 300;
+        }
+     }
+    .button {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+.text-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    height: 48px;
+    background: url(../img/bg-title-main.png) no-repeat center;
+    background-size: contain;
+    color: #fff;  
+    .text-cd(22px, 300);
+    @media @tablet-widths {
+        font-size: 20px;               
+    }
+
+    @media @mobil-widths {
+        height: auto; 
+        font-size: 18px;        
+        padding: 5px 10px;
+        background-size: 100% 100%;
+        max-width: 350px;
+    }    
+}
+.first-screen {
+    display: block;
+    background-color: #fff;
+    background: url(../img/ho.png) no-repeat center 140px, url(../img/bg-repeat-1.png) repeat top center;
+    background-size: auto;    
+    padding-top: 210px;
+    height: 850px;
+    @media @tablet-widths {       
+        height: 700px;
+        background-position: 50% 90%, top center; 
+        background-size: 140% auto, auto;
+    }
+    @media @mobil-widths {
+        padding-top: 130px;
+        height: 650px;
+        background: url(../img/ho-m.png) no-repeat center 330px; 
+        background-size: 170px auto;   
+    }
+
+    &__header {
+        position: relative;
+        z-index: 110;
+        width: 100%;        
+        padding: 40px 70px 70px;
+        color: #000;
+        text-align: left;
+        span {
+            display: block;
+            color: inherit;
+            line-height: 1;
+        }
+        span:nth-child(1) {
+            .text-cd(60px, 700);   
+            @media @tablet-widths {font-size: 50px;} 
+            @media @mobil-widths {font-size: 40px;text-align: center;}        
+        }
+        span:nth-child(2) {
+            .text(100px, 900);  
+            line-height: 0.9;   
+            @media @tablet-widths {font-size: 65px;} 
+            @media @mobil-widths {font-size: 45px;text-align: center;}      
+        }
+        span:nth-child(3) {
+            .text(40px, 400);
+            letter-spacing: -1px;
+            @media @tablet-widths { font-size: 28px;} 
+            @media @mobil-widths {font-size: 18px;text-align: center;} 
+        }      
+        
+        .center {	
+            padding-top: 70px;
+            text-align: left;
+            @media @tablet-widths { padding-top: 50px; } 
+            @media @mobil-widths {padding-top: 200px;}
+        } 
+        .button {
+            margin-top: 7px;
+        } 
+        @media @tablet-widths {
+            padding: 30px 40px;
+            width: 550px;            
+        }
+    
+        @media @mobil-widths {
+            text-align: center;
+            height: auto;
+            padding: 20px 0px 40px;
+            width: 100%;            
+            text-align: left;   
+            .text-gray {text-align: center; } 
+            .button {margin-top: 0; }                   
+        }      
+    }
+}

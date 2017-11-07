@@ -1,0 +1,110 @@
+.opening {
+    padding-bottom: 110px;
+    @media @mobil-widths {
+        padding-bottom: 60px;
+    }
+    h2 {
+        padding-top: 135px;
+        line-height: 1.2;  
+        @media @tablet-widths {
+            padding-top: 70px;  
+        }
+    
+        @media @mobil-widths {
+            padding-top: 40px; 
+        }      
+    }
+    .benefit-1 {
+        width: 100%;
+        padding: 70px 60px 0;
+        text-align: center;
+        @media @tablet-widths {
+            padding: 50px 20px 0;  
+            img { width: 90px;}
+        }    
+        @media @mobil-widths {
+            padding: 20px 0 0; 
+        }
+    }
+    .benefit-2 {
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+        position: relative;
+        background: url(../img/bg-2.jpg) center no-repeat;
+        height: 438px;
+        @media @tablet-widths {
+            margin-top: 50px;
+            width: 800px;
+            height: 350px;
+            background-size: contain;
+        }
+        @media @mobil-widths {
+            width: 100%;
+            background-image: none;
+            height: auto;
+        }
+    }
+    .b1, .b2, .b3 {
+        position: absolute;
+        width: 230px;
+        @media @tablet-widths {
+            width: 200px;
+        }
+        @media @mobil-widths {
+            position: static;
+            width: 300px;
+            margin: 0 auto;
+        }
+    } 
+    .b1 {
+        top: 50px;
+        left: 70px;
+        @media @tablet-widths {
+            top: -10px;
+            left: 0;
+        }
+    }
+    .b2 {
+        top: 0px;
+        right: 90px;
+        @media @tablet-widths {
+            top: -40px;
+            right: 30px;
+        }
+    }
+    .b3 {
+        bottom: 0;
+        right: 160px;
+        @media @tablet-widths {           
+            right: 50px;
+        }
+    }
+    .benefit__item {
+        padding: 16px 10px;
+        .text(16px, 400);
+        b {.text(22px, 500);}
+        span {
+            display: block;
+            font-weight: 300;
+        } 
+        @media @tablet-widths {
+           font-size: 14px; 
+           padding: 16px 0; 
+           b {font-size: 18px;}
+        }
+    
+        @media @mobil-widths {
+            font-size: 12px; 
+            padding: 16px 0 40px;
+            b {font-size: 16px;}
+        }       
+    }
+    .center {
+        padding-top: 40px;
+    }
+    .text-gray {
+        padding-bottom: 10px;
+    }
+}

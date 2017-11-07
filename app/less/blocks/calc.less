@@ -1,0 +1,84 @@
+.calc {
+    width: 100%;
+    background: url(../img/bg-3.jpg.png) right center no-repeat;
+    padding-bottom: 140px;
+    @media @mobil-widths {
+        padding-bottom: 40px;
+    }
+    &__block{
+        padding: 80px;
+        border-radius: 28px;
+        background-color: #f3f3f3;
+        background-image: url(../img/branch.png), url(../img/bg-repeat.png) ;
+        background-position: right -15px, center; 
+        background-repeat: no-repeat, repeat;
+        @media @tablet-widths {
+            padding: 40px 20px;
+        }
+    
+        @media @mobil-widths {
+    
+        }
+    }
+    h2 {
+        margin-bottom: 50px;
+        span {
+            color: @color-text;
+            font-weight: 300;
+        }
+        @media @tablet-widths {
+           
+        }
+        @media @mobil-widths {
+            font-size: 20px;
+            span {font-size: 15px;}
+        }
+    }
+    .result {
+        display: block;
+        padding-top: 75px;
+        padding-bottom: 30px;
+        text-align: center;
+        background: url(../img/ico/i-rub.png) top center no-repeat;
+        .title {
+            .text(24px, 400);
+            color: @color-text;
+        }
+        .value {
+            .text(48px, 700);
+            color: @color-text;
+        }
+        @media @mobil-widths {
+            margin-top: 20px;
+        
+            .title {
+               font-size: 18px;
+            }
+            .value {
+                font-size: 28px;
+            }
+        }
+    }
+    .center {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -130px;
+        left: 50%;
+        margin-left: -420px;
+        z-index: 100;
+        width: 340px;
+        height: 254px;
+        background: url(../img/buk.png) center no-repeat;
+        @media @mobil-widths {display: none;}
+        }
+    }
+    .button {
+        @media @mobil-widths {
+            letter-spacing: 0px;
+        }
+
+    }
+    
+}

@@ -1,0 +1,167 @@
+.package {
+    position: relative;
+    padding: 140px 60px 0;
+    text-align: center;
+    @media @tablet-widths {
+        padding: 120px 0 0;
+     } 
+    &__item {
+        width: auto;
+        margin: 0 22px 10px;
+        padding: 30px 25px 35px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {box-shadow: 0px 6px 18px 1px rgba(0, 0, 0, 0.18);}
+        .text-banner {
+            background-image: url(../img/bg-title.png);
+        }
+        @media @tablet-widths {
+            margin: 0;
+            width: 100%;
+         } 
+         @media @mobil-widths {
+             max-width: 350px;
+             margin: 0 auto;
+             .text-banner {
+                 width: 200px;
+             }
+         }
+    }
+    &__text {        
+        .text(16px, 400);
+        color: #a4a4a4;
+        @media @mobil-widths {
+            padding-bottom: 30px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 90px;
+        margin-top: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cost {
+        .text(18px, 400);
+        color: @color-text;
+        @media @tablet-widths {font-size: 16px;}
+    }
+    .cost-sum {
+        .text(34px, 500);
+        color: @color-text;
+        margin-bottom: 10px;
+        @media @tablet-widths {font-size: 26px;}
+    }
+}
+
+.modal-pac {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    width: 1030px;    
+    height: auto;
+    min-height: 550px;
+    padding: 80px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.18);
+    background-color: #f3f3f3;
+    background-image: url(../img/branch.png), url(../img/bg-repeat.png) ;
+    background-position: 700px -7px, center; 
+    background-repeat: no-repeat, repeat;
+    @media @tablet-widths {
+        width: 100%;
+        padding: 60px 30px 90px;
+    }
+
+    @media @mobil-widths {
+        padding: 60px 10px 40px 10px;
+    }
+    .text-banner {
+        margin-bottom: 20px;
+    }
+    .subtitle {
+        .text-cd(20px, 400);
+        color: @color-text;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        @media @tablet-widths {font-size: 18px;}
+    }
+    p {
+        .text-cd(18px, 400);
+        color: @color-text;
+        line-height: 1.2;
+        text-align: left;
+        padding-top: 16px;
+        margin-left: 10px; 
+        @media @mobil-widths {font-size: 16px;}
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            .text-cd(18px, 300);
+            color: @color-text;
+            line-height: 1.2; 
+            text-align: left;           
+            padding-left: 10px;
+            position: relative;
+            @media @tablet-widths {font-size: 16px;}
+            @media @mobil-widths {font-size: 14px;}
+            &:before {
+                content: "●";
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 10px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__red {
+        p, ul li { color: @color-red;}
+    }
+    &__red-bonus {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        .text-cd(20px, 700);
+        text-align: center;
+        text-transform: uppercase;
+        color: @color-red;
+        @media @mobil-widths {
+            position: static;
+            padding-top: 20px;
+            font-size: 16px;
+        }
+    }
+    &.pac3 {
+        .text-banner {
+            background-size: 75% 100%;
+            @media @tablet-widths {background-size: 600px 100%;}
+        }
+        .modal-pac__red-bonus {
+            text-transform: none;            
+        }
+    }
+    &.pac1, &.pac2 {
+        .modal-pac__red {
+            position: absolute;
+            bottom: 80px;
+            left: 80px;
+            @media @tablet-widths { left: 30px; }
+            @media @mobil-widths {position: static;}
+        }
+    }    
+}
+
+
+
+  
